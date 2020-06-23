@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		9C42C2A624A2092700DDE1DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C42C2A524A2092700DDE1DF /* Preview Assets.xcassets */; };
 		9C42C2A924A2092700DDE1DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C42C2A724A2092700DDE1DF /* LaunchScreen.storyboard */; };
 		9C42C2B224A2096A00DDE1DF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C42C2B124A2096A00DDE1DF /* MainVC.swift */; };
+		9C4EA9D324A216FD001D2CFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C4EA9D524A216FD001D2CFD /* Localizable.strings */; };
+		9C4EA9DD24A217CC001D2CFD /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C4EA9D924A217CC001D2CFD /* Lato-Bold.ttf */; };
+		9C4EA9DE24A217CC001D2CFD /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C4EA9DA24A217CC001D2CFD /* Lato-Black.ttf */; };
+		9C4EA9DF24A217CC001D2CFD /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C4EA9DB24A217CC001D2CFD /* Lato-Regular.ttf */; };
+		9C4EA9E024A217CC001D2CFD /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C4EA9DC24A217CC001D2CFD /* Lato-MediumItalic.ttf */; };
+		9C4EA9E524A21859001D2CFD /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EA9E424A21859001D2CFD /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,14 @@
 		9C42C2A824A2092700DDE1DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C42C2AA24A2092700DDE1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C42C2B124A2096A00DDE1DF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		9C4EA9D424A216FD001D2CFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9C4EA9D624A21729001D2CFD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9C4EA9D724A21729001D2CFD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9C4EA9D924A217CC001D2CFD /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		9C4EA9DA24A217CC001D2CFD /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		9C4EA9DB24A217CC001D2CFD /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		9C4EA9DC24A217CC001D2CFD /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		9C4EA9E424A21859001D2CFD /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		A06FFD37AB7CE0ADF7B8803D /* Pods-VoltRates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltRates.debug.xcconfig"; path = "Target Support Files/Pods-VoltRates/Pods-VoltRates.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +60,6 @@
 				A06FFD37AB7CE0ADF7B8803D /* Pods-VoltRates.debug.xcconfig */,
 				4E41E7550F52D7515D717617 /* Pods-VoltRates.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,11 +92,9 @@
 		9C42C29B24A2092600DDE1DF /* VoltRates */ = {
 			isa = PBXGroup;
 			children = (
-				9C42C2B024A2095600DDE1DF /* Controller */,
-				9C42C29C24A2092600DDE1DF /* AppDelegate.swift */,
-				9C42C2A224A2092700DDE1DF /* Assets.xcassets */,
-				9C42C2A724A2092700DDE1DF /* LaunchScreen.storyboard */,
 				9C42C2AA24A2092700DDE1DF /* Info.plist */,
+				9C4EA9E124A21830001D2CFD /* Sources */,
+				9C4EA9CF24A216D8001D2CFD /* Resources */,
 				9C42C2A424A2092700DDE1DF /* Preview Content */,
 			);
 			path = VoltRates;
@@ -103,6 +114,62 @@
 				9C42C2B124A2096A00DDE1DF /* MainVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C4EA9CF24A216D8001D2CFD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C4EA9D824A21741001D2CFD /* Fonts */,
+				9C4EA9D024A216E8001D2CFD /* Localization */,
+				9C42C2A224A2092700DDE1DF /* Assets.xcassets */,
+				9C42C2A724A2092700DDE1DF /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C4EA9D024A216E8001D2CFD /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				9C4EA9D524A216FD001D2CFD /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		9C4EA9D824A21741001D2CFD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9C4EA9DA24A217CC001D2CFD /* Lato-Black.ttf */,
+				9C4EA9D924A217CC001D2CFD /* Lato-Bold.ttf */,
+				9C4EA9DC24A217CC001D2CFD /* Lato-MediumItalic.ttf */,
+				9C4EA9DB24A217CC001D2CFD /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9C4EA9E124A21830001D2CFD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9C4EA9E224A2183D001D2CFD /* Utils */,
+				9C42C29C24A2092600DDE1DF /* AppDelegate.swift */,
+				9C42C2B024A2095600DDE1DF /* Controller */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9C4EA9E224A2183D001D2CFD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9C4EA9E324A2184D001D2CFD /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9C4EA9E324A2184D001D2CFD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C4EA9E424A21859001D2CFD /* UIFont+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +216,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 9C42C29024A2092600DDE1DF;
 			productRefGroup = 9C42C29A24A2092600DDE1DF /* Products */;
@@ -166,7 +234,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C42C2A924A2092700DDE1DF /* LaunchScreen.storyboard in Resources */,
+				9C4EA9DD24A217CC001D2CFD /* Lato-Bold.ttf in Resources */,
+				9C4EA9D324A216FD001D2CFD /* Localizable.strings in Resources */,
 				9C42C2A624A2092700DDE1DF /* Preview Assets.xcassets in Resources */,
+				9C4EA9DF24A217CC001D2CFD /* Lato-Regular.ttf in Resources */,
+				9C4EA9E024A217CC001D2CFD /* Lato-MediumItalic.ttf in Resources */,
+				9C4EA9DE24A217CC001D2CFD /* Lato-Black.ttf in Resources */,
 				9C42C2A324A2092700DDE1DF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C4EA9E524A21859001D2CFD /* UIFont+Extension.swift in Sources */,
 				9C42C29D24A2092600DDE1DF /* AppDelegate.swift in Sources */,
 				9C42C2B224A2096A00DDE1DF /* MainVC.swift in Sources */,
 			);
@@ -232,8 +306,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				9C42C2A824A2092700DDE1DF /* Base */,
+				9C4EA9D624A21729001D2CFD /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9C4EA9D524A216FD001D2CFD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C4EA9D424A216FD001D2CFD /* en */,
+				9C4EA9D724A21729001D2CFD /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -243,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -289,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -303,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -343,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

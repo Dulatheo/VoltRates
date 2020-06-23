@@ -8,11 +8,27 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 class MainVC: UIViewController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .red
+    }
+}
+
+//MARK: - ConfigUI
+extension MainVC {
+    func configUI() {
+        
+        
+        makeConstraints()
+    }
+    
+    func makeConstraints() {
+        
     }
 }
