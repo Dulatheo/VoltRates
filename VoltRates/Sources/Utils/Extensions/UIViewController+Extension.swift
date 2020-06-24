@@ -10,6 +10,16 @@ import Foundation
 import UIKit
 
 extension UIViewController {
+    var safeAreaPadding:UIEdgeInsets {
+        if #available(iOS 11.0, *) {
+            return UIApplication.shared.keyWindow?.safeAreaInsets ?? UIEdgeInsets.zero
+        } else {
+            return UIEdgeInsets.zero
+        }
+    }
+}
+
+extension UIViewController {
     public func openAlertError(title: String = "error", message: String? = nil, completion: (() -> Void)? = nil) {
         let alertVC = UIAlertController(title: title.localized, message: message, preferredStyle: .alert)
         
