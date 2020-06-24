@@ -19,6 +19,7 @@
 		9C4EA9DF24A217CC001D2CFD /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C4EA9DB24A217CC001D2CFD /* Lato-Regular.ttf */; };
 		9C4EA9E024A217CC001D2CFD /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C4EA9DC24A217CC001D2CFD /* Lato-MediumItalic.ttf */; };
 		9C4EA9E524A21859001D2CFD /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EA9E424A21859001D2CFD /* UIFont+Extension.swift */; };
+		9C70137A24A3596D009C7AED /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70137924A3596D009C7AED /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		9C4EA9DB24A217CC001D2CFD /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		9C4EA9DC24A217CC001D2CFD /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
 		9C4EA9E424A21859001D2CFD /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		9C70137924A3596D009C7AED /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A06FFD37AB7CE0ADF7B8803D /* Pods-VoltRates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltRates.debug.xcconfig"; path = "Target Support Files/Pods-VoltRates/Pods-VoltRates.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 		9C4EA9E224A2183D001D2CFD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9C70137824A3595F009C7AED /* Network */,
 				9C4EA9E324A2184D001D2CFD /* Extensions */,
 			);
 			path = Utils;
@@ -170,6 +173,14 @@
 				9C4EA9E424A21859001D2CFD /* UIFont+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9C70137824A3595F009C7AED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9C70137924A3596D009C7AED /* APIClient.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 				9C4EA9E524A21859001D2CFD /* UIFont+Extension.swift in Sources */,
 				9C42C29D24A2092600DDE1DF /* AppDelegate.swift in Sources */,
 				9C42C2B224A2096A00DDE1DF /* MainVC.swift in Sources */,
+				9C70137A24A3596D009C7AED /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

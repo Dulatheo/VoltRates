@@ -12,11 +12,11 @@ import SnapKit
 
 class MainVC: UIViewController {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .red
+        configUI()
+        view.backgroundColor = .white
     }
 }
 
@@ -24,11 +24,9 @@ class MainVC: UIViewController {
 extension MainVC {
     func configUI() {
         
-        
         makeConstraints()
     }
     
     func makeConstraints() {
-        
     }
 }
