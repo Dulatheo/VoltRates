@@ -1,5 +1,5 @@
 //
-//  APIClient.swift
+//  CurrencyType.swift
 //  VoltRates
 //
 //  Created by Dulatheo on 6/24/20.
@@ -7,3 +7,8 @@
 //
 
 import Foundation
+enum CurrencyType: String {
+    case RUB = "RUB"
+    case USD = "USD"
+    case EUR = "EUR"
+}

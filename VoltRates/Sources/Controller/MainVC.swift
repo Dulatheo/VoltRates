@@ -16,7 +16,21 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         
         configUI()
+        getLatestRates()
         view.backgroundColor = .white
+    }
+}
+
+//MARK: - Requests
+extension MainVC {
+    private func getLatestRates() {
+        NetworkLayer.shared.request(route: APIRouter.latest(base: .RUB, currencies: [.EUR, .RUB, .USD]), { [weak self] (string: String?) in
+            guard let wSelf = self else { return }
+        }) { [weak self] (error) in
+            guard let wSelf =  self else { return }
+            
+            wSelf.openAlertError(message: error?.handleError())
+        }
     }
 }
 
