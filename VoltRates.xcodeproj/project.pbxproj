@@ -189,11 +189,11 @@
 		9C4EA9E124A21830001D2CFD /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9CA0D77324A3855F00731B33 /* View */,
-				9C70137F24A35DCB009C7AED /* Model */,
-				9C4EA9E224A2183D001D2CFD /* Utils */,
 				9C42C29C24A2092600DDE1DF /* AppDelegate.swift */,
+				9C70137F24A35DCB009C7AED /* Model */,
+				9CA0D77324A3855F00731B33 /* View */,
 				9C42C2B024A2095600DDE1DF /* Controller */,
+				9C4EA9E224A2183D001D2CFD /* Utils */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
