@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Constants {
     //URLS
@@ -14,5 +15,12 @@ struct Constants {
     
     static func baseUrl() -> String {
         return url
+    }
+    
+    static func isSmallDevice() -> Bool {
+        if UIScreen.main.bounds.height <= 568.0 {
+            return true
+        }
+        return false
     }
 }

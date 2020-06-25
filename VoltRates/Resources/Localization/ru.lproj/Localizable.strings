@@ -5,3 +5,11 @@
   Created by Dulatheo on 6/23/20.
   Copyright © 2020 VoltMobi. All rights reserved.
 */
+"USD" = "доллар";
+"RUB" = "рубль";
+"EUR" = "евро";
+"updated_at" = "Обновлено в";
+"updating" = "Обновление...";
+"rate_down" = "Со вчерашнего дня @ \nупал на ";
+"rate_up" = "Со вчерашнего дня @ \nвырос на ";
+"rate_zero" = "Курс не изменился";

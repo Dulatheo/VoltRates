@@ -5,3 +5,11 @@
   Created by Dulatheo on 6/23/20.
   Copyright © 2020 VoltMobi. All rights reserved.
 */
+"USD" = "dollar";
+"RUB" = "ruble";
+"EUR" = "euro";
+"updated_at" = "Updated at";
+"updating" = "Updating...";
+"rate_down" = "Since yesterday @ \nfell by ";
+"rate_up" = "Since yesterday @ \ngrew by ";
+"rate_zero" = "Since yesterday rate did not change";

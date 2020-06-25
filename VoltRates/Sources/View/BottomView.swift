@@ -32,7 +32,7 @@ class BottomView: UIView {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.backgroundColor = UIColor.fromRgb(rgb: 0x3F4753)
+        tableView.backgroundColor = UIColor.mainColor
         
         tableView.register(RateCell.self, forCellReuseIdentifier: rateCell)
         

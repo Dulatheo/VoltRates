@@ -7,8 +7,15 @@
 //
 
 import Foundation
-enum CurrencyType: String {
+
+enum CurrencyType: String, Codable {
     case RUB = "RUB"
     case USD = "USD"
     case EUR = "EUR"
+}
+
+extension CurrencyType {
+    var name: String {
+        return self.rawValue.localized
+    }
 }

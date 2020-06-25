@@ -19,20 +19,7 @@ class RateCell: UITableViewCell {
             titleLabel.text = rate.title
         }
     }
-    
-//    override var isSelected: Bool {
-//        didSet {
-//
-//        }
-//    }
-//
-//    override var isHighlighted: Bool {
-//        didSet {
-//            titleLabel.font = isHighlighted ? UIFont.latoBlack(size: 28) : UIFont.latoRegular(size: 28)
-//            titleLabel.textColor = isHighlighted ? UIColor.white : UIColor.white.withAlphaComponent(0.7)
-//        }
-//    }
-//
+
     fileprivate var titleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -54,16 +41,16 @@ class RateCell: UITableViewCell {
 
 //MARK: - Actions
 extension RateCell {
-    func selected(_ selected: Bool) {
+    public func selected(_ selected: Bool) {
         titleLabel.font = selected ? UIFont.latoBlack(size: 28) : UIFont.latoRegular(size: 28)
         titleLabel.textColor = selected ? UIColor.white : UIColor.white.withAlphaComponent(0.7)
-        backgroundColor = UIColor.fromRgb(rgb: 0x3F4753)
+        backgroundColor = UIColor.mainColor
     }
 }
 
 //MARK: - ConfigUI
 extension RateCell {
-    func configUI() {
+    private func configUI() {
         selectionStyle = .none
         
         addSubview(titleLabel)
@@ -71,7 +58,7 @@ extension RateCell {
         makeConstraints()
     }
     
-    func makeConstraints() {
+    private func makeConstraints() {
         titleLabel.snp.makeConstraints { (m) in
             m.center.equalToSuperview()
             m.height.equalTo(34)

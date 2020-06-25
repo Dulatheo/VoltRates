@@ -11,13 +11,13 @@ import Alamofire
 
 enum APIRouter : URLRequestConvertible {
     
-    case latest(base: CurrencyType, currencies: [CurrencyType])
+    case history(RateRequest)
     
     
     //MARK: ------HttpMethod
     private var method: HTTPMethod {
         switch self {
-        case .latest:
+        case .history:
             return .get
         }
     }
@@ -25,8 +25,8 @@ enum APIRouter : URLRequestConvertible {
     //MARK: ------Path
     private var path: String {
         switch self {
-        case .latest:
-            return "/latest"
+        case .history:
+            return "/history"
         }
         
     }
@@ -34,15 +34,8 @@ enum APIRouter : URLRequestConvertible {
     //MARK: ------Parameters
     private var parameters: [String:Any]? {
         switch self {
-        case .latest(base: let base, currencies: let currencies):
-            var params = [String:Any]()
-            var array: [String] = []
-            currencies.forEach {
-                array.append($0.rawValue)
-            }
-            params["symbols"] = array.joined(separator: ",")
-            params["base"] = base.rawValue
-            return params
+        case .history(let request):
+            return request.dictionary
         }
     }
 
@@ -51,17 +44,7 @@ enum APIRouter : URLRequestConvertible {
         let url = try Constants.baseUrl().asURL()
         
         let urlRequest = URLRequest(url: url.appendingPathComponent(path))
-        
-        let encoding: ParameterEncoding = {
-            switch method {
-            case .get, .patch, .delete:
-                return URLEncoding.default
-            default:
-                return URLEncoding.httpBody
-            }
-        }()
-        
-        return try encoding.encode(urlRequest, with: parameters)
+        return try URLEncoding.default.encode(urlRequest, with: parameters)
     }
 }
 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>plural_percent</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@VARIABLE@</string>
+		<key>VARIABLE</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>zero</key>
+			<string>процентов</string>
+			<key>one</key>
+			<string>процент</string>
+			<key>two</key>
+			<string>процента</string>
+			<key>three</key>
+			<string>процента</string>
+			<key>four</key>
+			<string>процента</string>
+			<key>other</key>
+			<string>процентов</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

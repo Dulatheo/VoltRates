@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0952FE9C1B53C8E0F3049B3B /* Pods_VoltRates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3369792B9B50F7325D7915 /* Pods_VoltRates.framework */; };
+		9C1EAC3124A485C70077194D /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EAC3324A485C70077194D /* Localizable.stringsdict */; };
 		9C42C29D24A2092600DDE1DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C42C29C24A2092600DDE1DF /* AppDelegate.swift */; };
 		9C42C2A324A2092700DDE1DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C42C2A224A2092700DDE1DF /* Assets.xcassets */; };
 		9C42C2A624A2092700DDE1DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C42C2A524A2092700DDE1DF /* Preview Assets.xcassets */; };
@@ -32,11 +33,18 @@
 		9CA0D77524A3857600731B33 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0D77424A3857600731B33 /* BottomView.swift */; };
 		9CA0D77724A3878D00731B33 /* RateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0D77624A3878D00731B33 /* RateType.swift */; };
 		9CA0D77B24A3C7F200731B33 /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0D77A24A3C7F200731B33 /* RateCell.swift */; };
+		9CA0D77D24A3E5A200731B33 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0D77C24A3E5A200731B33 /* RateView.swift */; };
+		9CA0D77F24A3EA8D00731B33 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0D77E24A3EA8D00731B33 /* Rate.swift */; };
+		9CA0D78124A3ED6D00731B33 /* Date+String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0D78024A3ED6D00731B33 /* Date+String+Extension.swift */; };
+		9CA0D78524A3F10B00731B33 /* RateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0D78424A3F10B00731B33 /* RateRequest.swift */; };
+		9CA0D78724A3F19D00731B33 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0D78624A3F19D00731B33 /* Encodable+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A3369792B9B50F7325D7915 /* Pods_VoltRates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoltRates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E41E7550F52D7515D717617 /* Pods-VoltRates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltRates.release.xcconfig"; path = "Target Support Files/Pods-VoltRates/Pods-VoltRates.release.xcconfig"; sourceTree = "<group>"; };
+		9C1EAC3224A485C70077194D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		9C1EAC3424A485C90077194D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ru; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		9C42C29924A2092600DDE1DF /* VoltRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoltRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C42C29C24A2092600DDE1DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C42C2A224A2092700DDE1DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +73,11 @@
 		9CA0D77424A3857600731B33 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		9CA0D77624A3878D00731B33 /* RateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateType.swift; sourceTree = "<group>"; };
 		9CA0D77A24A3C7F200731B33 /* RateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
+		9CA0D77C24A3E5A200731B33 /* RateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
+		9CA0D77E24A3EA8D00731B33 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		9CA0D78024A3ED6D00731B33 /* Date+String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String+Extension.swift"; sourceTree = "<group>"; };
+		9CA0D78424A3F10B00731B33 /* RateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRequest.swift; sourceTree = "<group>"; };
+		9CA0D78624A3F19D00731B33 /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
 		A06FFD37AB7CE0ADF7B8803D /* Pods-VoltRates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoltRates.debug.xcconfig"; path = "Target Support Files/Pods-VoltRates/Pods-VoltRates.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				9C4EA9D524A216FD001D2CFD /* Localizable.strings */,
+				9C1EAC3324A485C70077194D /* Localizable.stringsdict */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -203,6 +217,8 @@
 				9CA0D76D24A374DF00731B33 /* String+Extension.swift */,
 				9CA0D76F24A3756200731B33 /* Error+Extension.swift */,
 				9CA0D77124A380F400731B33 /* UIColor+Extension.swift */,
+				9CA0D78024A3ED6D00731B33 /* Date+String+Extension.swift */,
+				9CA0D78624A3F19D00731B33 /* Encodable+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -222,6 +238,8 @@
 			children = (
 				9C70138024A35DD6009C7AED /* CurrencyType.swift */,
 				9CA0D77624A3878D00731B33 /* RateType.swift */,
+				9CA0D77E24A3EA8D00731B33 /* Rate.swift */,
+				9CA0D78424A3F10B00731B33 /* RateRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,6 +249,7 @@
 			children = (
 				9CA0D77424A3857600731B33 /* BottomView.swift */,
 				9CA0D77A24A3C7F200731B33 /* RateCell.swift */,
+				9CA0D77C24A3E5A200731B33 /* RateView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,6 +317,7 @@
 			files = (
 				9C42C2A924A2092700DDE1DF /* LaunchScreen.storyboard in Resources */,
 				9C4EA9DD24A217CC001D2CFD /* Lato-Bold.ttf in Resources */,
+				9C1EAC3124A485C70077194D /* Localizable.stringsdict in Resources */,
 				9C4EA9D324A216FD001D2CFD /* Localizable.strings in Resources */,
 				9C42C2A624A2092700DDE1DF /* Preview Assets.xcassets in Resources */,
 				9C4EA9DF24A217CC001D2CFD /* Lato-Regular.ttf in Resources */,
@@ -357,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CA0D77724A3878D00731B33 /* RateType.swift in Sources */,
+				9CA0D77D24A3E5A200731B33 /* RateView.swift in Sources */,
 				9C70137C24A35B37009C7AED /* Constants.swift in Sources */,
 				9CA0D76E24A374DF00731B33 /* String+Extension.swift in Sources */,
 				9C70137E24A35B3F009C7AED /* APIRouter.swift in Sources */,
@@ -365,11 +386,15 @@
 				9C4EA9E524A21859001D2CFD /* UIFont+Extension.swift in Sources */,
 				9C42C29D24A2092600DDE1DF /* AppDelegate.swift in Sources */,
 				9C70138324A36367009C7AED /* Params+Extension.swift in Sources */,
+				9CA0D78124A3ED6D00731B33 /* Date+String+Extension.swift in Sources */,
 				9C42C2B224A2096A00DDE1DF /* MainVC.swift in Sources */,
 				9C70137A24A3596D009C7AED /* NetworkLayer.swift in Sources */,
 				9CA0D76C24A3747000731B33 /* UIViewController+Extension.swift in Sources */,
 				9CA0D77224A380F400731B33 /* UIColor+Extension.swift in Sources */,
 				9CA0D77524A3857600731B33 /* BottomView.swift in Sources */,
+				9CA0D77F24A3EA8D00731B33 /* Rate.swift in Sources */,
+				9CA0D78724A3F19D00731B33 /* Encodable+Extension.swift in Sources */,
+				9CA0D78524A3F10B00731B33 /* RateRequest.swift in Sources */,
 				9CA0D77024A3756200731B33 /* Error+Extension.swift in Sources */,
 				9C70138524A36389009C7AED /* Data+Extension.swift in Sources */,
 			);
@@ -378,6 +403,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9C1EAC3324A485C70077194D /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C1EAC3224A485C70077194D /* en */,
+				9C1EAC3424A485C90077194D /* ru */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
 		9C42C2A724A2092700DDE1DF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

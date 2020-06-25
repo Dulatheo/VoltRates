@@ -13,4 +13,8 @@ extension UIColor {
     static func fromRgb(rgb:Int) -> UIColor{
         return UIColor(red: (CGFloat((rgb&0xFF0000) >> 16))/255.0, green: (CGFloat((rgb&0xFF00) >> 8))/255.0, blue: (CGFloat(rgb&0xFF))/255.0, alpha: 1.0)
     }
+    
+    static var mainColor = UIColor.fromRgb(rgb: 0x3F4753)
+    static var greenUp = UIColor.fromRgb(rgb: 0x7ED321)
+    static var redDown = UIColor.fromRgb(rgb: 0xD0021B)
 }
